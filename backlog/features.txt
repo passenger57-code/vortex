@@ -1,0 +1,12 @@
+Watch together. A shared “watch party” room is the big one. A smaller version is “continue on another device” with a QR code.
+Smart “Because you watched” rows using genre overlap, then upgrade to real recommendations once you have viewing data.
+Seasonal and weekly schedule. For airing anime, a “this week” calendar showing which episodes drop on which day, with a notification bell.
+Collections and playlists that profiles can create, name and reorder, plus admin-made editorial collections like “Cyberpunk anime” or “Weekend binge”.
+Ratings and short reviews. Do thumbs up/down first, then written reviews once you have reporting and moderation.
+Download for offline only for content you own and only if your device and licensing rules allow it.
+Parental controls. A kids profile with a maturity cap and a PIN to switch profiles or change settings.
+Chromecast and AirPlay support on the player.
+Smarter autoplay. Remember the audio and subtitle language per profile and apply it to every episode automatically.
+Analytics for you as owner. Most-watched titles, where viewers stop watching, failed playback counts and storage used, shown in the admin dashboard.
+Content requests. Let viewers request a title, with an admin queue to approve or reject.
+Backup and export. One-click export of your catalog and viewing data, which also helps if you move storage providers.

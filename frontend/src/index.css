@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: #02050b; }
+  body { @apply bg-ink text-snow font-sans antialiased; min-height: 100vh; }
+  ::selection { background: #1f8bff; color: #fff; }
+  :focus-visible { outline: 2px solid #3fd2ff; outline-offset: 2px; }
+  input, select, button { font: inherit; }
+  select option { color: #111827; background-color: #fff; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-volt px-5 py-2 font-bold text-white transition-colors hover:bg-volt-400 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-secondary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-line bg-panel px-5 py-2 font-medium text-snow transition-colors hover:bg-raised;
+  }
+  .field-control {
+    @apply min-h-11 w-full rounded-md border border-line bg-raised px-4 py-2.5 text-snow placeholder:text-mist/70 focus:border-volt focus:outline-none;
+  }
+  .surface-panel {
+    @apply rounded-xl border border-line bg-panel;
+  }
+  .skeleton-block {
+    @apply animate-pulse rounded-md bg-raised;
+  }
+  .status-badge {
+    @apply inline-flex items-center rounded px-2 py-0.5 text-xs font-semibold;
+  }
+  .dialog-panel {
+    @apply rounded-xl border border-line bg-panel shadow-2xl;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .pad-x { padding-left: max(1rem, 4%); padding-right: max(1rem, 4%); }
+  .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+@media (hover: none) {
+  .title-card-touch-actions { display: flex; }
+  .title-card-shell:hover { transform: none; }
+}
+
+@media (max-width: 767px) {
+  .app-shell-with-tabs { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
+}
